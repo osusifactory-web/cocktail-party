@@ -4,17 +4,26 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#070915" />
+
   <title>カクテルパーティー｜公式Web説明書</title>
-  <meta name="description" content="おすしファクトリー制作『カクテルパーティー』公式Web説明書。動画で遊び方を確認できます。" />
+  <meta name="description" content="おすしファクトリー制作『カクテルパーティー』公式Web説明書。動画・3STEP・説明書画像で遊び方を確認できます。" />
+
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
+
 <body>
+  <!-- Header -->
   <header class="topbar">
     <div class="wrap topbar-inner">
-      <a class="brand" href="#top"><span class="brand-mark">🍸</span><span>カクテルパーティー</span></a>
+      <a class="brand" href="#top" aria-label="カクテルパーティー トップへ">
+        <span class="brand-mark">🍸</span>
+        <span>カクテルパーティー</span>
+      </a>
+
       <nav class="nav" aria-label="ページ内ナビゲーション">
-        <a href="#video">動画</a>
+        <a href="#movie">動画</a>
         <a href="#about">概要</a>
+        <a href="#howto-simple">3STEP</a>
         <a href="#rules">遊び方</a>
         <a href="#manual">説明書</a>
         <a href="#faq">FAQ</a>
@@ -23,218 +32,472 @@
   </header>
 
   <main id="top">
-    <section class="hero" aria-label="メインビジュアル">
-  <div class="wrap">
-    <div class="hero-layout">
-      <div class="hero-copy">
-        <span class="kicker">Official Web Manual</span>
-        <h1>カクテルパーティー</h1>
-        <p class="hero-lead">
-          みんなの声を聞き分けて乾杯！<br>
-          同じカクテルの相手を見つけるパーティーゲーム
-        </p>
 
-        <div class="badges" aria-label="ゲーム情報">
-          <span class="badge">テーブル要らず</span>
-          <span class="badge">飲み会・BBQに最適</span>
-          <span class="badge">3〜26人</span>
-          <span class="badge">10〜20分</span>
-        </div>
-
-        <div class="cta-row">
-          <a class="btn btn-primary" href="#video">▶ 動画で見る</a>
-          <a class="btn btn-secondary" href="#rules">📖 遊び方を読む</a>
-        </div>
-      </div>
-
-      <div class="hero-visual">
-        <img src="assets/img/hero.jpg" alt="カクテルパーティー メインビジュアル">
-      </div>
-    </div>
-  </div>
-</section>
-
-    <section id="video">
+    <!-- 1. FV -->
+    <section class="fv section-hero" aria-label="メインビジュアル">
       <div class="wrap">
-        <div class="section-head">
-          <div>
-            <div class="section-label">Movie</div>
-            <h2>まずは動画でルールを見る</h2>
-            <p class="section-note">はじめて遊ぶ方は、動画を見ながら確認するのがおすすめです。2つの遊び方をそれぞれ紹介しています。</p>
+        <div class="fv-card">
+          <div class="fv-copy">
+            <p class="eyebrow">Official Web Manual</p>
+
+            <h1>
+              カクテル<br class="sp-only">パーティー
+            </h1>
+
+            <p class="fv-main-copy">
+              みんなの声を聞き分けて乾杯！
+            </p>
+
+            <p class="fv-sub-copy">
+              同じカクテルの相手を見つける<br class="sp-only">
+              カクテルテーマのパーティーゲーム
+            </p>
+
+            <div class="feature-badges" aria-label="ゲーム情報">
+              <span>3〜26人</span>
+              <span>10〜20分</span>
+              <span>テーブル要らず</span>
+              <span>飲み会・BBQにも</span>
+            </div>
+
+            <div class="cta-row">
+              <a class="btn btn-primary" href="#movie">▶ 動画で見る</a>
+              <a class="btn btn-secondary" href="#howto-simple">📖 遊び方を見る</a>
+            </div>
+          </div>
+
+          <div class="fv-visual">
+            <img src="assets/img/hero-lp.png" alt="カクテルパーティーのパッケージとカード" />
           </div>
         </div>
-        <div class="video-grid">
-          <article class="panel panel-pink video-card">
-            <h3>遊び方1｜乾杯マッチング！</h3>
-            <p>回答者が、みんなの声を聞いて同じカクテルの相手を探すルールです。はじめて遊ぶ方におすすめ。</p>
-            <div class="video-wrap">
+      </div>
+    </section>
+
+    <!-- 2. 楽しさ訴求 -->
+    <section id="fun" class="section">
+      <div class="wrap">
+        <div class="section-head center">
+          <p class="section-label">POINT</p>
+          <h2>声を聞き分けるだけで、場が盛り上がる。</h2>
+          <p class="section-lead">
+            カクテル名が一斉に飛び交うパーティー会場。<br>
+            聞き間違いも、迷う時間も、全部が笑いになるゲームです。
+          </p>
+        </div>
+
+        <div class="scene-panel">
+          <img src="assets/img/scene-party.png" alt="みんなでカクテル名を注文して盛り上がる様子" />
+        </div>
+
+        <div class="point-grid">
+          <article class="point-card">
+            <div class="point-icon">🗣️</div>
+            <h3>みんなで同時に注文！</h3>
+            <p>「せーの！」でカクテル名を一斉に読み上げます。</p>
+          </article>
+
+          <article class="point-card">
+            <div class="point-icon">👂</div>
+            <h3>声を聞き分ける</h3>
+            <p>騒がしい声の中から、同じカクテルの相手を探します。</p>
+          </article>
+
+          <article class="point-card">
+            <div class="point-icon">🥂</div>
+            <h3>見つけたら乾杯！</h3>
+            <p>同じカクテルの相手を見つけたら、カードを公開して答え合わせ。</p>
+          </article>
+
+          <article class="point-card">
+            <div class="point-icon">🎉</div>
+            <h3>大人数でも遊べる</h3>
+            <p>飲み会・BBQ・旅行・ボドゲ会の最初にもおすすめです。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. 動画 -->
+    <section id="movie" class="section section-movie">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="section-label">MOVIE</p>
+          <h2>まずは動画でルールを見る</h2>
+          <p class="section-lead">
+            はじめて遊ぶ方は、動画を見ながら確認するのがおすすめです。<br>
+            2つの遊び方をそれぞれ紹介しています。
+          </p>
+        </div>
+
+        <div class="movie-grid">
+          <article class="movie-card card-pink">
+            <div class="movie-thumb">
               <video controls playsinline preload="metadata" poster="assets/img/video-kanpai.jpg">
                 <source src="assets/video/kanpai-matching.mp4" type="video/mp4">
                 お使いのブラウザは動画再生に対応していません。
               </video>
             </div>
+            <div class="movie-body">
+              <p class="rule-tag">遊び方1</p>
+              <h3>乾杯マッチング！</h3>
+              <p>回答者が、みんなの声を聞いて同じカクテルの相手を探すルールです。</p>
+              <p class="recommend">はじめて遊ぶ方におすすめ</p>
+            </div>
           </article>
-          <article class="panel panel-cyan video-card">
-            <h3>遊び方2｜マスター、注文です！</h3>
-            <p>マスターが、誰がどのカクテルを注文したかを聞き分けて当てるルールです。少し慣れてきた方におすすめ。</p>
-            <div class="video-wrap">
+
+          <article class="movie-card card-cyan">
+            <div class="movie-thumb">
               <video controls playsinline preload="metadata" poster="assets/img/video-master.jpg">
                 <source src="assets/video/master-order.mp4" type="video/mp4">
                 お使いのブラウザは動画再生に対応していません。
               </video>
             </div>
+            <div class="movie-body">
+              <p class="rule-tag">遊び方2</p>
+              <h3>マスター、注文です！</h3>
+              <p>マスターが、誰がどのカクテルを注文したかを聞き分けて当てるルールです。</p>
+              <p class="recommend">少し慣れてきた方におすすめ</p>
+            </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="about">
+    <!-- 4. どんなゲーム？ -->
+    <section id="about" class="section">
       <div class="wrap">
-        <div class="section-head">
-          <div>
-            <div class="section-label">About</div>
+        <div class="about-card">
+          <div class="section-head">
+            <p class="section-label">ABOUT</p>
             <h2>どんなゲーム？</h2>
           </div>
-        </div>
-        <div class="panel panel-yellow about-text">
-          <p>ここは、お酒好きたちが集まるパーティー会場。どこもかしこもカクテルの話題で大盛り上がり！</p>
-          <p>騒がしい会話の中から、みんなの声を聞き分けて、<strong>自分と同じカクテルを持っている参加者</strong>を見つけましょう。</p>
-          <p>同じカクテルを見つけたら――「乾杯！」</p>
+
+          <div class="about-text">
+            <p>
+              ここは、お酒好きたちが集まるパーティー会場。<br>
+              どこもかしこもカクテルの話題で大盛り上がり！
+            </p>
+            <p>
+              騒がしい会話の中から、みんなの声を聞き分けて、<br>
+              <strong>自分と同じカクテルを持っている参加者</strong>を見つけましょう。
+            </p>
+            <p>
+              同じカクテルを見つけたら――<strong>「乾杯！」</strong>
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="contents">
+    <!-- 5. 3STEP -->
+    <section id="howto-simple" class="section section-howto">
       <div class="wrap">
-        <div class="section-head">
-          <div>
-            <div class="section-label">Contents</div>
-            <h2>内容物</h2>
-          </div>
+        <div class="section-head center">
+          <p class="section-label">HOW TO PLAY</p>
+          <h2>3STEPでわかる遊び方</h2>
+          <p class="section-lead">
+            まずはざっくり流れを確認。詳しいルールは下の「2つの遊び方」で確認できます。
+          </p>
         </div>
-        <div class="contents-grid">
-          <div class="contents-item"><span>カクテルカード</span><b>25種類 各2枚<br>計50枚</b></div>
-          <div class="contents-item"><span>マスターボタンカード</span><b>2種類<br>計2枚</b></div>
-          <div class="contents-item"><span>予備カード</span><b>2種類<br>計2枚</b></div>
-          <div class="contents-item"><span>説明書</span><b>1枚</b></div>
-        </div>
-      </div>
-    </section>
 
-    <section id="rules">
-      <div class="wrap">
-        <div class="section-head">
-          <div>
-            <div class="section-label">Rules</div>
-            <h2>2つの遊び方</h2>
-            <p class="section-note">詳しい手順は同封の説明書にも記載しています。ここでは流れを確認できます。</p>
-          </div>
+        <div class="howto-image">
+          <img src="assets/img/howto-3step.png" alt="カクテルパーティー 3STEPでわかる遊び方" />
         </div>
-        <div class="rule-grid">
-          <article class="panel panel-pink">
-            <h3>遊び方1｜乾杯マッチング！</h3>
-            <div class="steps">
-              <div class="step"><div class="step-no">1</div><div><h4>役割を決める</h4><p>1番手が回答者、左隣がマスターになります。</p></div></div>
-              <div class="step"><div class="step-no">2</div><div><h4>カードを準備</h4><p>マスターは回答者用のカードと、参加者へ配るカードを準備します。</p></div></div>
-              <div class="step"><div class="step-no">3</div><div><h4>みんなで注文！</h4><p>回答者以外が同時にカクテル名を読み上げます。</p></div></div>
-              <div class="step"><div class="step-no">4</div><div><h4>声から相手を探す</h4><p>回答者は自分のカードを確認し、同じカクテルだと思う1人を選びます。</p></div></div>
-              <div class="step"><div class="step-no">5</div><div><h4>乾杯！</h4><p>カードを公開して、一致なら1点。はずれは0点です。</p></div></div>
-            </div>
+
+        <div class="step-grid">
+          <article class="simple-step">
+            <span class="step-label">STEP 1</span>
+            <h3>カードを見る</h3>
+            <p>自分のカクテルを確認します。</p>
           </article>
-          <article class="panel panel-cyan">
-            <h3>遊び方2｜マスター、注文です！</h3>
-            <div class="steps">
-              <div class="step"><div class="step-no">1</div><div><h4>マスターを決める</h4><p>1番手がマスターになります。</p></div></div>
-              <div class="step"><div class="step-no">2</div><div><h4>カードを準備</h4><p>マスター以外の各プレイヤーに、裏向きでカードを1枚ずつ配ります。</p></div></div>
-              <div class="step"><div class="step-no">3</div><div><h4>みんなで注文！</h4><p>マスター以外の全員が同時にカクテル名を読み上げます。</p></div></div>
-              <div class="step"><div class="step-no">4</div><div><h4>注文を当てる</h4><p>マスターは誰がどのカクテルを注文したのかを聞き分けます。</p></div></div>
-              <div class="step"><div class="step-no">5</div><div><h4>答え合わせ</h4><p>完全一致で2点、カクテルのみ一致で1点、はずれは0点です。</p></div></div>
-            </div>
+
+          <article class="simple-step">
+            <span class="step-label">STEP 2</span>
+            <h3>みんなで注文！</h3>
+            <p>「せーの！」でカクテル名を同時に読み上げます。</p>
+          </article>
+
+          <article class="simple-step">
+            <span class="step-label">STEP 3</span>
+            <h3>聞き分けて乾杯！</h3>
+            <p>同じカクテルの相手を見つけたら、カードを公開して答え合わせ。</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="tips">
+    <!-- 6. 2つの遊び方 詳細 -->
+    <section id="rules" class="section">
       <div class="wrap">
-        <div class="section-head">
-          <div>
-            <div class="section-label">Tips</div>
-            <h2>遊び方のコツ</h2>
-          </div>
+        <div class="section-head center">
+          <p class="section-label">RULES</p>
+          <h2>2つの遊び方</h2>
+          <p class="section-lead">
+            好みのルールで楽しめます。はじめての場合は「乾杯マッチング！」からがおすすめです。
+          </p>
         </div>
-        <div class="rule-grid">
-          <div class="panel panel-green">
+
+        <div class="rules-grid">
+          <article class="rule-panel card-pink">
+            <div class="rule-panel-head">
+              <p class="rule-tag">遊び方1</p>
+              <h3>乾杯マッチング！</h3>
+              <p>回答者が、みんなの声を聞いて同じカクテルの相手を探すルール。</p>
+            </div>
+
+            <ol class="rule-steps">
+              <li>
+                <span>1</span>
+                <div>
+                  <h4>役割を決める</h4>
+                  <p>1番手が回答者、左隣がマスターになります。</p>
+                </div>
+              </li>
+
+              <li>
+                <span>2</span>
+                <div>
+                  <h4>カードを準備</h4>
+                  <p>マスターは回答者用のカードと、参加者へ配るカードを準備します。</p>
+                </div>
+              </li>
+
+              <li>
+                <span>3</span>
+                <div>
+                  <h4>みんなで注文！</h4>
+                  <p>回答者以外が同時にカクテル名を読み上げます。</p>
+                </div>
+              </li>
+
+              <li>
+                <span>4</span>
+                <div>
+                  <h4>声から相手を探す</h4>
+                  <p>回答者は自分のカードを確認し、同じカクテルだと思う1人を選びます。</p>
+                </div>
+              </li>
+
+              <li>
+                <span>5</span>
+                <div>
+                  <h4>乾杯！</h4>
+                  <p>カードを公開して、一致なら1点。はずれは0点です。</p>
+                </div>
+              </li>
+            </ol>
+          </article>
+
+          <article class="rule-panel card-cyan">
+            <div class="rule-panel-head">
+              <p class="rule-tag">遊び方2</p>
+              <h3>マスター、注文です！</h3>
+              <p>マスターが、誰がどのカクテルを注文したかを聞き分けて当てるルール。</p>
+            </div>
+
+            <ol class="rule-steps">
+              <li>
+                <span>1</span>
+                <div>
+                  <h4>マスターを決める</h4>
+                  <p>1番手がマスターになります。</p>
+                </div>
+              </li>
+
+              <li>
+                <span>2</span>
+                <div>
+                  <h4>カードを準備</h4>
+                  <p>マスター以外の各プレイヤーに、裏向きでカードを1枚ずつ配ります。</p>
+                </div>
+              </li>
+
+              <li>
+                <span>3</span>
+                <div>
+                  <h4>みんなで注文！</h4>
+                  <p>マスター以外の全員が同時にカクテル名を読み上げます。</p>
+                </div>
+              </li>
+
+              <li>
+                <span>4</span>
+                <div>
+                  <h4>注文を当てる</h4>
+                  <p>マスターは誰がどのカクテルを注文したのかを聞き分けます。</p>
+                </div>
+              </li>
+
+              <li>
+                <span>5</span>
+                <div>
+                  <h4>答え合わせ</h4>
+                  <p>完全一致で2点、カクテルのみ一致で1点、はずれは0点です。</p>
+                </div>
+              </li>
+            </ol>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. コツ・カジュアルルール -->
+    <section id="tips" class="section section-tips">
+      <div class="wrap">
+        <div class="section-head center">
+          <p class="section-label">TIPS</p>
+          <h2>遊び方のコツ</h2>
+        </div>
+
+        <div class="tips-grid">
+          <article class="tips-card card-green">
             <h3>遊ぶ前のコツ</h3>
-            <ul class="tip-list">
+            <ul>
               <li>カクテル名を読み上げる前に、一度みんなで声を出して音量を合わせておくと遊びやすくなります。</li>
               <li>できるだけ横一列、または半円状に並ぶと聞き分けやすくなります。</li>
               <li>マスターになったプレイヤーは、マスターボタンカードを自分の前に置きます。</li>
             </ul>
-          </div>
-          <div class="panel panel-yellow">
+          </article>
+
+          <article class="tips-card card-yellow">
             <h3>カジュアルルール</h3>
-            <ul class="tip-list">
+            <ul>
               <li>勝敗をつけず、好きなラウンド数だけ遊んでもOKです。</li>
-              <li>全員が1回ずつ回答者を担当して終了したり、大人数の場合はやりたい人だけ順番にプレイしたり、人数や時間に合わせて自由に楽しめます。</li>
+              <li>全員が1回ずつ回答者を担当して終了してもOKです。</li>
+              <li>大人数の場合は、やりたい人だけ順番にプレイしても楽しめます。</li>
             </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. 内容物 -->
+    <section id="contents" class="section section-contents">
+      <div class="wrap">
+        <div class="section-head center">
+          <p class="section-label">CONTENTS</p>
+          <h2>内容物</h2>
+          <p class="section-lead">
+            すぐに遊べるセット内容です。
+          </p>
+        </div>
+
+        <div class="contents-visual">
+          <img src="assets/img/contents.png" alt="カクテルパーティー 内容物一覧" />
+        </div>
+
+        <div class="contents-list">
+          <div class="contents-item">
+            <span>カクテルカード</span>
+            <strong>25種類 各2枚 / 計50枚</strong>
+          </div>
+          <div class="contents-item">
+            <span>マスターボタンカード</span>
+            <strong>2種類 / 計2枚</strong>
+          </div>
+          <div class="contents-item">
+            <span>予備カード</span>
+            <strong>2種類 / 計2枚</strong>
+          </div>
+          <div class="contents-item">
+            <span>説明書</span>
+            <strong>1枚</strong>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="manual">
+    <!-- 9. 説明書 -->
+    <section id="manual" class="section section-manual">
       <div class="wrap">
-        <div class="section-head">
-          <div>
-            <div class="section-label">Manual</div>
-            <h2>説明書を画像で確認する</h2>
-            <p class="section-note">画像をタップすると大きく表示できます。</p>
-          </div>
+        <div class="section-head center">
+          <p class="section-label">MANUAL</p>
+          <h2>説明書を画像で確認する</h2>
+          <p class="section-lead">
+            画像をタップすると大きく表示できます。
+          </p>
         </div>
+
         <div class="manual-grid">
-          <div class="manual-card">
-            <a href="assets/img/manual-front.jpg" target="_blank" rel="noopener"><img src="assets/img/manual-front.jpg" alt="カクテルパーティー説明書 オモテ"></a>
+          <article class="manual-card">
+            <a href="assets/img/manual-front.jpg" target="_blank" rel="noopener">
+              <img src="assets/img/manual-front.jpg" alt="カクテルパーティー説明書 オモテ" />
+            </a>
             <p>説明書 オモテ</p>
-          </div>
-          <div class="manual-card">
-            <a href="assets/img/manual-back.jpg" target="_blank" rel="noopener"><img src="assets/img/manual-back.jpg" alt="カクテルパーティー説明書 ウラ"></a>
+          </article>
+
+          <article class="manual-card">
+            <a href="assets/img/manual-back.jpg" target="_blank" rel="noopener">
+              <img src="assets/img/manual-back.jpg" alt="カクテルパーティー説明書 ウラ" />
+            </a>
             <p>説明書 ウラ</p>
-          </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <section id="faq">
+    <!-- 10. FAQ -->
+    <section id="faq" class="section section-faq">
       <div class="wrap">
-        <div class="section-head">
-          <div>
-            <div class="section-label">FAQ</div>
-            <h2>よくある質問</h2>
-          </div>
+        <div class="section-head center">
+          <p class="section-label">FAQ</p>
+          <h2>よくある質問</h2>
         </div>
-        <div class="faq-grid">
-          <div>
-            <details open><summary>Q. お酒が飲めなくても遊べますか？</summary><p>遊べます。カクテルをテーマにしたゲームですが、実際にお酒を飲む必要はありません。</p></details>
-            <details><summary>Q. テーブルがなくても遊べますか？</summary><p>遊べます。カードを確認できるスペースがあれば、立ったままでも遊べます。</p></details>
-            <details><summary>Q. どちらのルールから遊ぶのがおすすめですか？</summary><p>初めての場合は「乾杯マッチング！」からがおすすめです。</p></details>
-          </div>
-          <div>
-            <details><summary>Q. 何人で遊ぶのがおすすめですか？</summary><p>少人数でも遊べますが、人数が増えるほど聞き分けがにぎやかになります。時間に合わせてラウンド数を調整してください。</p></details>
-            <details><summary>Q. 説明書にないケースが発生しました。</summary><p>XまたはWebサイトからお問い合わせください。必要に応じてFAQへ追記します。</p></details>
-            <details><summary>Q. 最新情報はどこで確認できますか？</summary><p>おすしファクトリーのX・Webサイトをご確認ください。</p></details>
-          </div>
+
+        <div class="faq-list">
+          <details open>
+            <summary>Q. お酒が飲めなくても遊べますか？</summary>
+            <p>遊べます。カクテルをテーマにしたゲームですが、実際にお酒を飲む必要はありません。</p>
+          </details>
+
+          <details>
+            <summary>Q. テーブルがなくても遊べますか？</summary>
+            <p>遊べます。カードを確認できるスペースがあれば、立ったままでも遊べます。</p>
+          </details>
+
+          <details>
+            <summary>Q. どちらのルールから遊ぶのがおすすめですか？</summary>
+            <p>初めての場合は「乾杯マッチング！」からがおすすめです。</p>
+          </details>
+
+          <details>
+            <summary>Q. 何人で遊ぶのがおすすめですか？</summary>
+            <p>少人数でも遊べますが、人数が増えるほど聞き分けがにぎやかになります。時間に合わせてラウンド数を調整してください。</p>
+          </details>
+
+          <details>
+            <summary>Q. 説明書にないケースが発生しました。</summary>
+            <p>XまたはWebサイトからお問い合わせください。必要に応じてFAQへ追記します。</p>
+          </details>
+
+          <details>
+            <summary>Q. 最新情報はどこで確認できますか？</summary>
+            <p>おすしファクトリーのX・Webサイトをご確認ください。</p>
+          </details>
         </div>
       </div>
     </section>
+
   </main>
 
+  <!-- Footer -->
   <footer class="footer">
     <div class="wrap">
-      <div class="neon-line"></div>
-      <p>ゲームデザイン・制作：おすしファクトリー</p>
-      <p>X：<a href="https://x.com/osusi_factory" target="_blank" rel="noopener">@osusi_factory</a>　WEB：<a href="https://osusifactory-web.github.io/cocktail-party/" target="_blank" rel="noopener">osusifactory-web.github.io/cocktail-party/</a></p>
-      <p>© 2026 おすしファクトリー</p>
+      <div class="footer-line"></div>
+
+      <p class="footer-title">ゲームデザイン・制作：おすしファクトリー</p>
+
+      <p class="footer-links">
+        X：
+        <a href="https://x.com/osusi_factory" target="_blank" rel="noopener">@osusi_factory</a>
+        <br class="sp-only">
+        WEB：
+        <a href="https://osusifactory-web.github.io/cocktail-party/" target="_blank" rel="noopener">
+          osusifactory-web.github.io/cocktail-party/
+        </a>
+      </p>
+
+      <p class="copyright">© 2026 おすしファクトリー</p>
     </div>
   </footer>
 </body>
