@@ -55,3 +55,198 @@ details{border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.04);
 .footer{padding:42px 0;text-align:center;color:#9993ad;font-size:13px}.footer a{color:#fff;font-weight:800}.neon-line{height:1px;background:linear-gradient(90deg,transparent,var(--pink),var(--cyan),transparent);box-shadow:0 0 18px rgba(255,63,180,.5);margin:20px 0}
 @media (max-width:820px){.nav{display:none}.hero{padding-top:34px}.hero-card{border-radius:22px}.hero-card img{min-height:520px;object-fit:cover;object-position:center}.section-head{display:block}.video-grid,.rule-grid,.manual-grid,.faq-grid{grid-template-columns:1fr}.contents-grid{grid-template-columns:repeat(2,1fr)}section{padding:52px 0}.panel{padding:19px}}
 @media (max-width:520px){.wrap{width:min(100% - 22px,1120px)}.topbar-inner{min-height:56px}.brand{font-size:14px}h1{font-size:46px}.hero-lead{font-size:16px}.badge{font-size:12px;padding:7px 9px}.contents-grid{grid-template-columns:1fr}.hero-card img{min-height:560px}.step{grid-template-columns:38px 1fr}.step-no{width:34px;height:34px}.cta-row .btn{width:100%}}
+/* =========================
+   SP表示改善：FV重なり解消
+========================= */
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .wrap {
+    width: min(100% - 24px, 1120px);
+  }
+
+  .topbar {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+  }
+
+  .topbar-inner {
+    min-height: 56px;
+  }
+
+  .brand {
+    font-size: 14px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .hero {
+    padding: 24px 0 36px;
+  }
+
+  .hero-card {
+    display: block;
+    border-radius: 22px;
+    overflow: hidden;
+  }
+
+  .hero-card > img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .hero-text {
+    position: static !important;
+    transform: none !important;
+    width: 100%;
+    padding: 22px 18px 24px;
+    background:
+      radial-gradient(circle at 20% 0%, rgba(255, 45, 180, .16), transparent 38%),
+      radial-gradient(circle at 100% 10%, rgba(0, 220, 255, .14), transparent 42%),
+      linear-gradient(180deg, rgba(8, 10, 24, .98), rgba(5, 7, 18, .98));
+    border-top: 1px solid rgba(255,255,255,.14);
+    text-align: left;
+  }
+
+  .kicker {
+    font-size: 11px;
+    letter-spacing: .12em;
+  }
+
+  .hero-text h1 {
+    font-size: 38px;
+    line-height: 1.08;
+    margin: 10px 0 10px;
+    letter-spacing: .02em;
+  }
+
+  .hero-lead {
+    font-size: 15px;
+    line-height: 1.75;
+    margin: 0;
+  }
+
+  .badges {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-top: 16px;
+  }
+
+  .badge {
+    min-height: 36px;
+    padding: 7px 8px;
+    font-size: 12px;
+    line-height: 1.35;
+    text-align: center;
+  }
+
+  .cta-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-top: 18px;
+  }
+
+  .btn {
+    width: 100%;
+    min-height: 46px;
+    font-size: 14px;
+  }
+
+  section {
+    padding: 44px 0;
+  }
+
+  .section-head {
+    margin-bottom: 18px;
+  }
+
+  .section-label {
+    font-size: 12px;
+  }
+
+  h2 {
+    font-size: 28px;
+    line-height: 1.25;
+  }
+
+  .section-note {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .video-grid,
+  .rule-grid,
+  .manual-grid,
+  .faq-grid,
+  .contents-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px;
+  }
+
+  .panel {
+    padding: 18px;
+    border-radius: 20px;
+  }
+
+  .panel h3 {
+    font-size: 19px;
+    line-height: 1.45;
+  }
+
+  .video-card p,
+  .about-text p,
+  .step p,
+  .tip-list li,
+  details p {
+    font-size: 14px;
+    line-height: 1.85;
+  }
+
+  .video-wrap video {
+    width: 100%;
+    border-radius: 14px;
+  }
+
+  .step {
+    grid-template-columns: 40px 1fr;
+    gap: 12px;
+    padding: 14px 0;
+  }
+
+  .step-no {
+    width: 36px;
+    height: 36px;
+    font-size: 17px;
+  }
+
+  .step h4 {
+    font-size: 15px;
+    margin-bottom: 4px;
+  }
+
+  .contents-item {
+    padding: 16px;
+  }
+
+  .manual-card img {
+    border-radius: 14px;
+  }
+
+  details summary {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .footer {
+    padding: 34px 0;
+    font-size: 12px;
+  }
+}
